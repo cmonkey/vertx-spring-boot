@@ -40,6 +40,11 @@
 			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+        <dependency>
+            <groupId>dev.snowdrop</groupId>
+            <artifactId>vertx-spring-boot-starter-http</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>
