@@ -25,8 +25,9 @@ public class BPI{
         var responseBody = response.body();
         String r = IOUtils.inputStreamAsString(responseBody, StandardCharsets.UTF_8.name());
         var json = JSON.parseObject(r);
-        var bpi = json.getJSONObject("BPI");
-        System.out.println("bpi = " + bpi);
-        //System.out.printf("Current Bitcoin Price: $%s %s", price, indicator);
+        var bpi = json.getJSONObject("bpi");
+        var usd = bpi.getJSONObject("USD");
+        var price = usd.getFloatValue("rate_float");
+        System.out.printf("Current Bitcoin USD Price: $%s ", price);
     }
 }
