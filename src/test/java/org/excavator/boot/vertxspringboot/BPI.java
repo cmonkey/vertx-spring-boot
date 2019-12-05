@@ -1,10 +1,8 @@
 package org.excavator.boot.vertxspringboot;
 
 import com.alibaba.fastjson.JSON;
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import org.synchronoss.cloud.nio.multipart.util.IOUtils;
 
-import javax.json.Json;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
